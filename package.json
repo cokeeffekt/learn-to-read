@@ -1,0 +1,73 @@
+{
+  "name": "learn-to-read",
+  "version": "0.1.0",
+  "private": true,
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "host": "concurrently \"npx http-server ./dist -p 8181\" \"ngrok http -subdomain learntoread 8181\""
+  },
+  "dependencies": {
+    "annyang": "^2.6.1",
+    "anycontrol": "^0.2.4",
+    "core-js": "^3.6.4",
+    "localforage": "^1.7.3",
+    "register-service-worker": "^1.6.2",
+    "voice-speech-recognition": "^1.1.2",
+    "vue": "^2.6.11",
+    "vue-async-computed": "^3.8.2",
+    "vue-awesome": "^4.0.2",
+    "vue-contenteditable": "^1.0.2",
+    "vue-touch": "^2.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-pwa": "^4.2.2",
+    "@vue/cli-service": "~4.2.0",
+    "babel-eslint": "^10.0.3",
+    "concurrently": "^5.1.0",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "exports-loader": "^0.7.0",
+    "http-server": "^0.12.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/cokeeffekt/learn-to-read/issues"
+  },
+  "homepage": "https://github.com/cokeeffekt/learn-to-read#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cokeeffekt/learn-to-read.git"
+  }
+}
